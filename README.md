@@ -31,7 +31,7 @@ Due to export limitations, a maximum of 10,000 concordance lines per query was r
 
 For different tasks, datasets were constructed as follows:
 
-- - **Collostructional clustering**: based on the most strongly attracted infinitives for each modal, identified via collostructional analysis; for each collexeme, concordance lines were retrieved from the corpus using targeted CQL queries of the form *modal + infinitive*, and used to build context-based representations   
+- **Collostructional clustering**: based on the most strongly attracted infinitives for each modal, identified via collostructional analysis; for each collexeme, concordance lines were retrieved from the corpus using targeted CQL queries of the form *modal + infinitive*, and used to build context-based representations  
 - **Prediction tasks**: balanced datasets of modal–infinitive constructions were created by sampling concordance lines for each modal  
 - **Sentence similarity**: a large background corpus was constructed through repeated random exports (shuffle option), combined with targeted exports for the modal verbs to ensure sufficient coverage of modal–infinitive constructions  
 
