@@ -6,7 +6,7 @@ This repository contains selected code from my MSc thesis in Linguistic Computin
 
 This project investigates how Italian modal constructions are represented in neural language models, combining corpus-based and cognitive linguistic analysis with computational modeling.
 It integrates collostructional analysis, clustering techniques, masked language modeling tasks, and sentence similarity in embedding space to compare distributional patterns derived from corpus data, reflecting usage-based and cognitively grounded regularities, with representations learned by neural models.
-The goal is to evaluate how well neural models capture constructional meaning and to explore the gap between usage-based, cognitively motivated linguistic patterns and model-based semantic representations. The repository includes notebooks implementing the following methods:
+The goal is to evaluate how well neural models capture constructional meaning and to explore the gap between usage-based, cognitively motivated linguistic patterns and model representations. The repository includes notebooks implementing the following methods:
 
 - collocation-based clustering  
 - embedding-based clustering  
@@ -27,9 +27,7 @@ The full corpus data used in this project is not included due to licensing restr
 
 The experiments rely on data extracted from the itTenTen20 corpus (Sketch Engine), a large web-based corpus of Italian. The corpus is lemmatized and part-of-speech tagged, and was queried using Corpus Query Language (CQL).
 
-Modal–infinitive constructions were extracted using queries targeting sequences in which a modal verb (*dovere*, *potere*, *volere*) is immediately followed by an infinitive (tagged as `VMN0000`). Concordance lines were exported from Sketch Engine, including reference, left context, the key-word-in-context (modal + infinitive), and right context.
-
-Due to export limitations, a maximum of 10,000 concordance lines per query was retrieved. Sentence-level data was reconstructed by merging context fields (left, KWIC, right) and removing annotation markup.
+Modal–infinitive constructions were extracted using queries targeting sequences in which a modal verb (*dovere*, *potere*, *volere*) is immediately followed by an infinitive (tagged as `VMN0000`). Concordance lines were exported from Sketch Engine, including reference, left context, the key-word-in-context (modal + infinitive), and right context. Due to export limitations, a maximum of 10,000 concordance lines per query was retrieved. 
 
 ### Included derived datasets
 
@@ -40,9 +38,9 @@ This repository includes **processed outputs from collostructional analyses**, w
 - `collvol_out.csv` – Simple Collexeme Analysis results for *volere*
 - `covar_out.csv` – Covarying Collexeme Analysis results across modal constructions
 
-These datasets were generated in R and contain association scores used to define:
-- ranked lists of infinitives (for infinitive prediction)
-- modal–infinitive association patterns (for modal prediction)
+These datasets were generated in R and contain association scores used to derive:
+- ranked lists of infinitives significantly attracted to each modal construction  
+- association patterns between modal verbs and infinitives (used for modal prediction)  
 
 ### Task-specific dataset construction
 
