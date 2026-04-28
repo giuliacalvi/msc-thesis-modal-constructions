@@ -4,7 +4,11 @@ This repository contains selected code from my MSc thesis in Linguistic Computin
 
 ## Overview
 
-The project investigates Italian modal constructions using collostructional analysis, clustering techniques, masked language modeling tasks, and sentence similarity in embedding space. The repository includes notebooks implementing the following methods:
+## Overview
+
+This project investigates how Italian modal constructions are represented in neural language models, combining corpus-based and cognitive linguistic analysis with computational modeling.
+It integrates collostructional analysis, clustering techniques, masked language modeling tasks, and sentence similarity in embedding space to compare distributional patterns derived from corpus data, reflecting usage-based and cognitively grounded regularities, with representations learned by neural models.
+The goal is to evaluate how well neural models capture constructional meaning and to explore the gap between usage-based, cognitively motivated linguistic patterns and model-based semantic representations. The repository includes notebooks implementing the following methods:
 
 - collocation-based clustering  
 - embedding-based clustering  
